@@ -309,28 +309,48 @@
             </div>
 
             <!-- BÜYÜK GERÇEK ÖNCESİ / SONRASI VİTRİN GÖRSELİ -->
-            <div class="max-w-5xl mx-auto bg-brand-dark rounded-3xl p-4 sm:p-6 shadow-2xl border border-yellow-500/20">
-                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                    <img src="./gercek-oncesi-sonrasi.jpg" alt="Mermer Silim Öncesi Mat Çizik ve Sonrası Ayna Kristalize Parlaklık" class="w-full h-auto object-cover max-h-[600px]">
+            <div class="max-w-5xl mx-auto bg-brand-dark rounded-2xl sm:rounded-3xl p-3 sm:p-6 shadow-2xl border border-yellow-500/20">
+                
+                <!-- Üst Karşılaştırma Başlık Şeridi (Mobilde asla çakışmaz, tam net!) -->
+                <div class="grid grid-cols-2 gap-2 sm:gap-4 mb-3">
+                    <div class="bg-red-600/90 text-white font-black text-xs sm:text-sm py-2 px-3 rounded-xl shadow flex items-center justify-center gap-1.5 text-center">
+                        <i class="fa-solid fa-triangle-exclamation text-xs sm:text-sm"></i>
+                        <span>ÖNCESİ <span class="hidden sm:inline font-normal opacity-90">• Mat & Çizik Zemin</span></span>
+                    </div>
+                    <div class="bg-gradient-to-r from-brand-gold to-brand-darkGold text-brand-dark font-black text-xs sm:text-sm py-2 px-3 rounded-xl shadow flex items-center justify-center gap-1.5 text-center">
+                        <i class="fa-solid fa-sparkles text-xs sm:text-sm"></i>
+                        <span>SONRASI <span class="hidden sm:inline font-bold opacity-90">• Ayna Kristalize Cila</span></span>
+                    </div>
+                </div>
+
+                <!-- Resim Alanı & Dikey Bölücü Çizgi -->
+                <div class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
+                    <img src="./gercek-oncesi-sonrasi.jpg" alt="Mermer Silim Öncesi Mat Çizik ve Sonrası Ayna Kristalize Parlaklık" class="w-full h-64 sm:h-96 md:h-[480px] lg:h-[540px] object-cover object-center block">
                     
-                    <!-- Sol Taraf Etiketi -->
-                    <div class="absolute top-6 left-6 bg-red-600/90 backdrop-blur-md text-white font-black text-xs sm:text-sm px-4 py-2 rounded-xl shadow-xl flex items-center gap-2">
-                        <i class="fa-solid fa-triangle-exclamation"></i>
-                        <span>ÖNCESİ: Çizik, Mat & Aşınmış</span>
-                    </div>
-
-                    <!-- Sağ Taraf Etiketi -->
-                    <div class="absolute top-6 right-6 bg-brand-gold/95 backdrop-blur-md text-brand-dark font-black text-xs sm:text-sm px-4 py-2 rounded-xl shadow-xl flex items-center gap-2">
-                        <i class="fa-solid fa-sparkles"></i>
-                        <span>SONRASI: Ayna Kristalize Cila</span>
-                    </div>
-
-                    <!-- Orta Ayırıcı Çizgi Bilgilendirmesi -->
-                    <div class="absolute bottom-6 inset-x-0 flex justify-center px-4">
-                        <div class="bg-brand-dark/85 backdrop-blur-md text-white text-xs font-semibold px-6 py-2.5 rounded-full border border-yellow-500/30 shadow-xl text-center">
-                            Aynı Plaka Üzerinde: Solda Matlaşmış Orijinal Durum / Sağda Silim Sonrası Işık Yansıması
+                    <!-- Ortadaki Dikey Ayırıcı Çizgi & Karşılaştırma İkonu -->
+                    <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-0.5 bg-white/90 shadow-[0_0_12px_rgba(0,0,0,0.8)] z-10 pointer-events-none flex items-center justify-center">
+                        <div class="w-7 h-7 sm:w-10 sm:h-10 bg-brand-gold text-brand-dark rounded-full shadow-2xl flex items-center justify-center text-xs sm:text-base font-black border-2 border-white">
+                            <i class="fa-solid fa-arrows-left-right"></i>
                         </div>
                     </div>
+
+                    <!-- Sol Küçük Rozet -->
+                    <div class="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 bg-black/75 backdrop-blur-md text-red-400 font-bold text-[10px] sm:text-xs px-2.5 py-1 rounded-lg border border-red-500/40">
+                        Mat & Yıpranmış
+                    </div>
+
+                    <!-- Sağ Küçük Rozet -->
+                    <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 bg-black/75 backdrop-blur-md text-yellow-300 font-bold text-[10px] sm:text-xs px-2.5 py-1 rounded-lg border border-yellow-500/40">
+                        Ayna Parlaklığı
+                    </div>
+                </div>
+
+                <!-- Bilgilendirme Notu (Resmin üstünü kapatmaz, altında temiz durur) -->
+                <div class="mt-3.5 text-center">
+                    <p class="text-[11px] sm:text-xs text-gray-300 font-medium inline-flex items-center gap-1.5 sm:gap-2 bg-gray-900/90 px-3 sm:px-5 py-2 rounded-full border border-gray-800">
+                        <i class="fa-solid fa-circle-info text-brand-gold shrink-0"></i>
+                        <span>Aynı mermer plaka üzerinde: <strong>Solda</strong> orijinal aşınmış durum, <strong>sağda</strong> silim ve cila sonrası ışık yansıması.</span>
+                    </p>
                 </div>
 
                 <!-- Detaylı Karşılaştırma Kartları -->
