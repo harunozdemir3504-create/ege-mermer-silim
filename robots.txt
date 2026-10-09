@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gmkmermersilim.com.tr/sitemap.xml
